@@ -16,7 +16,7 @@
     }
 
     .cmp-languagenavigation__group {
-      @apply absolute flex-col row-start-2 py-1 transform -translate-x-1/2 border divide-y rounded shadow border-fill-muted border-opacity-50 divide-fill-muted justify-evenly ml-[50%] mt-2 bg-fill;
+      @apply z-20 absolute flex-col row-start-2 py-1 transform -translate-x-1/2 border divide-y rounded shadow border-fill-muted border-opacity-50 divide-fill-muted justify-evenly ml-[50%] mt-2 bg-fill;
       color: var(--button-text-color);
     }
 
