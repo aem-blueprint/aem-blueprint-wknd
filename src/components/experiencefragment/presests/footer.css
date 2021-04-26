@@ -1,0 +1,6 @@
+@layer components {
+  #logo-footer { @apply max-w-[8rem]; }
+  #footer .cmp-text { @apply max-w-full text-xs leading-none; }
+  #footer .cmp-text p { @apply text-xs leading-none; }
+  #footer .cmp-text a { @apply text-white hover:no-underline; }
+}

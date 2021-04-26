@@ -1,0 +1,22 @@
+@layer utilities {
+  @screen md {
+    .tabs.tabs\:vertical {
+      .cmp-tabs {
+        @apply grid; 
+        grid-template-columns: minmax(250px, 20%) 75%;
+      }
+      .cmp-tabs__tablist {
+        @apply flex-col mb-0 mr-4 border-b-0 border-r;
+      }
+
+      .cmp-tabs__tab {
+        @apply border border-transparent rounded-none rounded-l outline-none;
+      }
+
+      .cmp-tabs__tab--active {
+        @apply mr-[-1px] mb-0 border-text;
+        border-right-color: var(--color-fill);
+      }
+    }
+  }
+}

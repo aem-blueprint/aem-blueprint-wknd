@@ -1,0 +1,8 @@
+@layer components {
+  .teaser--preset\:circle-icon-half-above .cmp-teaser__image {
+    @apply rounded-full border-[5px] absolute -top-8;
+    background-color: theme('colors.light.primary.DEFAULT');
+    border-color: white;
+  }
+  .teaser--preset\:circle-icon-half-above .cmp-teaser__content { @apply pt-8 pb-6; }
+}

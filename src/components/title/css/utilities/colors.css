@@ -1,0 +1,8 @@
+@layer utilities {
+  .title.primary,
+  .title.secondary,
+  .title.light,
+  .title.dark,
+  .title.white,
+  .title.black { @apply text-fill; }
+}

@@ -1,0 +1,47 @@
+@layer utilities {
+  [class*=container--toggle] {
+    &:not(.initialized) {
+      .button--toggle\:closed,
+      .container--toggle\:target {
+        @apply hidden h-0;
+      }
+    }
+    &.initialized {
+      .container--toggle\:target { @apply w-full; }
+      .container--toggle\:target[data-collapsed=true] { @apply h-auto; }
+    }
+  }
+
+  @screen md {
+    [class*=container--toggle\:md].initialized {
+      .button--toggle\:open,
+      .button--toggle\:closed { @apply hidden; }
+      .container--toggle\:target { 
+        @apply block w-auto; 
+        height: auto !important;
+      }
+    }
+  }
+
+  @screen lg {
+    [class*=container--toggle\:lg].initialized {
+      .button--toggle\:open,
+      .button--toggle\:closed { @apply hidden; }
+      .container--toggle\:target { 
+        @apply block w-auto; 
+        height: auto !important;
+      }
+    }
+  }
+
+  @screen xl {
+    [class*=container--toggle\:xl].initialized {
+      .button--toggle\:open,
+      .button--toggle\:closed { @apply hidden; }
+      .container--toggle\:target { 
+        @apply block w-auto; 
+        height: auto !important;
+      }
+    }
+  }
+}

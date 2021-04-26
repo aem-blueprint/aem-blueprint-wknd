@@ -1,0 +1,26 @@
+@layer base {
+  .container[class*=var\:rounded] .cmp-container { @apply overflow-hidden; }
+
+  .cmp-container {
+    @apply bg-center bg-fill text-text;
+    background-blend-mode: var(--background-blend-mode, normal);
+    gap: var(--gap);
+    row-gap: var(--row-gap, var(--gap, 0));
+    column-gap: var(--column-gap, var(--gap, 0));
+    flex-direction: var(--flex-direction);
+    flex-grow: var(--flex-grow, 0);
+    flex-wrap: var(--flex-wrap, 0);
+    justify-content: var(--justify-content, 'flex-start');
+    align-items: var(--align-items);
+    padding: var(--padding, 0);
+    box-shadow: var(--box-shadow, none);
+    border-radius: var(--border-radius, none);
+  }
+
+  .no-flex-gap .var\:flex-row > .cmp-container > *:not([hidden]) + *:not(.hidden):not(.container--toggle\:target) {
+    margin-left: var(--gap);
+  }
+  .no-flex-gap .var\:flex-col > .cmp-container > *:not([hidden]) + *:not([hidden]:not(.container--toggle\:target)) {
+    margin-top: var(--gap);
+  }
+}

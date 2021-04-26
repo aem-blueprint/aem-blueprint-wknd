@@ -1,0 +1,9 @@
+@layer utilities {
+  .languagenavigation\:list-x .cmp-languagenavigation__group {
+    @apply flex flex-row;
+  }
+
+  .languagenavigation\:list-y .cmp-languagenavigation__group {
+    @apply flex flex-col;
+  }
+}

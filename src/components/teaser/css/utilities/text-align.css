@@ -1,0 +1,5 @@
+@layer utilities {
+  .var\:text-left .cmp-image { justify-content: flex-start; }
+  .var\:text-center .cmp-image { justify-content: center; }
+  .var\:text-right .cmp-image { justify-content: flex-end; }
+}

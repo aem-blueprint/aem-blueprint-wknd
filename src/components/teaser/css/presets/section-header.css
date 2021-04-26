@@ -1,0 +1,6 @@
+@layer components {
+  .teaser--preset\:section-header .cmp-teaser__pretitle { 
+    @apply px-4 py-1 text-xs font-bold uppercase rounded-full bg-section-header text-section-header;
+  }
+  .teaser--preset\:section-header.var\:text-center .cmp-teaser__pretitle { align-self: center; }
+}

@@ -1,0 +1,30 @@
+@layer utilities {
+  .teaser.teaser--gap\:none .cmp-teaser__content { @apply gap-0; }
+  .teaser.teaser--gap\:none:not([class*=-group]) { 
+    .cmp-teaser__action-container { @apply gap-0; }
+  }
+  .teaser.teaser--gap\:xs .cmp-teaser__content { @apply gap-1; }
+  .teaser.teaser--gap\:xs:not([class*=-group]) { 
+    .cmp-teaser__action-container { @apply gap-1; }
+  }
+  .teaser.teaser--gap\:sm .cmp-teaser__content { @apply gap-2; }
+  .teaser.teaser--gap\:sm:not([class*=-group]) { 
+    .cmp-teaser__action-container { @apply gap-2; }
+  }
+  .teaser.teaser--gap\:md .cmp-teaser__content { @apply gap-4; }
+  .teaser.teaser--gap\:md:not([class*=-group]) { 
+    .cmp-teaser__action-container { @apply gap-4; }
+  }
+  .teaser.teaser--gap\:lg .cmp-teaser__content { @apply gap-6; }
+  .teaser.teaser--gap\:lg:not([class*=-group]) { 
+    .cmp-teaser__action-container { @apply gap-6; }
+  }
+  .teaser.teaser--gap\:xl .cmp-teaser__content { @apply gap-8; }
+  .teaser.teaser--gap\:xl:not([class*=-group]) { 
+    .cmp-teaser__action-container { @apply gap-8; }
+  }
+  .teaser.teaser--gap\:2xl .cmp-teaser__content { @apply gap-12; }
+  .teaser.teaser--gap\:2xl:not([class*=-group]) { 
+    .cmp-teaser__action-container { @apply gap-12; }
+  }
+}

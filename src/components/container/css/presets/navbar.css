@@ -1,0 +1,19 @@
+@layer components {
+  .container.container\:navbar {
+    > .cmp-container {
+      @apply flex flex-wrap items-center;
+    }
+
+    @screen sm { 
+      > .cmp-container { @apply justify-between; }
+    }
+
+    .image { @apply max-w-[200px]; }
+    .cmp-image__link { @apply block max-w-full; }
+
+  }
+  .no-flex-gap .container.container\:navbar .image { margin-right: var(--gap); }
+  @screen sm {
+    .container.container\:navbar .image { @apply max-w-[170px]; }
+  }
+}

@@ -1,0 +1,16 @@
+@layer components {
+  .download.download\:tags {
+    .cmp-download {}
+    .cmp-download__title { @apply m-0; }
+    .cmp-download__properties { @apply flex flex-row gap-x-2; }
+    .cmp-download__property { @apply flex gap-x-2; }
+    .cmp-download__property-label { @apply sr-only; }
+    .cmp-download__property-content { 
+      @apply p-2 rounded bg-fill-muted text-text;
+    }
+    .cmp-download__property--filename {}
+    .cmp-download__property--size {}
+    .cmp-download__property--format {}
+    .cmp-download__action-text {}
+  }
+}

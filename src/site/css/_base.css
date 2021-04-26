@@ -1,0 +1,44 @@
+/* Base styles */
+@layer base {
+  html {
+    @apply font-sans bg-fill text-text;
+  }
+
+  #root {
+    @apply flex flex-col min-h-screen;
+
+    > .container { @apply z-0 flex-1 w-full; }
+    > .experiencefragment { @apply z-10; }
+  }
+
+  html[class*=aem-AuthorLayer] #root { @apply min-h-full; }
+
+  button,
+  select,
+  input,
+  a {
+    @apply focus:ring focus:ring-DEFAULT focus:ring-opacity-75 focus:outline-none focus:ring-offset-2 focus:ring-offset-transparent;
+  }
+
+  a { 
+    @apply text-fill;
+    @apply hover:text-fill-hover;
+    @apply focus:text-fill-hover;
+  }
+
+  select {
+    @apply p-1 mx-0 my-2 text-base bg-transparent border rounded text border-text;
+    @apply hover:text-text-hover hover:border-text-hover;
+    @apply focus:text-text-hover focus:border-text-hover;
+  }
+
+  [class*=var\:max-w-screen] {
+    @apply w-full px-2 mx-auto;
+    max-width: var(--max-width);
+  }
+
+  .xf-content-height {
+    min-height: auto !important;
+    margin: 0 !important;
+  }
+}

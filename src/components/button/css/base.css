@@ -1,0 +1,42 @@
+@layer base {
+  .button, .teaser {
+    --button-bg-color: var(--color-fill);
+    --button-bg-color-hover: var(--color-fill-hover);
+    --button-border-color: var(--color-fill);
+    --button-border-color-hover: var(--color-fill);
+    --button-text-color: var(--color-text);
+    --button-text-color-hover: var(--color-text-hover);
+    --button-padding: var(--padding-y, var(--padding, theme('padding.2'))) var(--padding-x, var(--padding, theme('padding.3')));
+    --button-rounded: 0;
+    --button-gap: ;
+    --button-leading: var(--line-height, theme('lineHeight.normal'));
+    --button-font-size: var(--font-size);
+    --button-font-weight: var(--font-weight, theme('fontWeight.semibold'));
+    --button-margin: var(--margin, theme('margin.0'));
+  }
+
+  [class*=teaser--action\:button] .cmp-teaser__action-link,
+  .cmp-form-button,
+  .cmp-button {
+    @apply relative inline-flex items-center space-x-4 text-center no-underline transition-all transform border shadow cursor-pointer bg-fill border-fill text-text;
+    margin: var(--button-margin);
+    line-height: var(--button-leading);
+    font-weight: var(--button-font-weight);
+    font-size: var(--button-font-size);
+    border-radius: var(--button-rounded);
+    padding: var(--button-padding);
+
+    @apply hover:shadow-none hover:bg-fill-hover hover:text-text-accent-hover hover:border-fill-hover;
+    @apply focus:shadow-none focus:bg-fill-hover focus:text-text-accent-hover focus:border-fill-hover focus:top-px;
+    @apply active:top-px;
+  }
+
+  .cmp-button__text {}
+  .cmp-button__icon {
+    @apply flex bg-text;
+    width: var(--button-font-size);
+    height: var(--button-font-size);
+    mask-size: cover;
+    margin: calc(var(--button-text-size) / 2) 0; 
+  }
+}

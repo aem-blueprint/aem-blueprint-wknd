@@ -1,0 +1,20 @@
+@layer utilities {
+  @screen md {
+    .angled\:center-left .cmp-container:after,
+    .angled\:center-right .cmp-container:after,
+    .angled\:center-left .cmp-teaser:after,
+    .angled\:center-right .cmp-teaser:after {
+      @apply block w-[4%] h-full absolute bg-fill;
+      content: "";
+    }
+
+    .angled\:center-left .cmp-container:after, .angled\:center-left .cmp-teaser:after { 
+      left: calc(46% + 1px);
+      clip-path: polygon(100% 0,0 100%,100% 100%);
+    }
+    .angled\:center-right .cmp-teaser:after, .angled\:center-right .cmp-teaser:after { 
+      right: calc(46% + 1px);
+      clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@layer utilities {
+  div[class*=form--grid-cols] > .cmp-form {
+    @apply grid; 
+    @screen md {
+      grid-template-columns: var(--grid-template-columns, 1);
+    }
+  }
+}

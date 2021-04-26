@@ -1,0 +1,9 @@
+@layer utilities {
+  .carousel.carousel--controls\:none,
+  .carousel.carousel--controls\:hover:not(:hover) {
+    .cmp-carousel__actions,
+    .cmp-carousel__indicators {
+      @apply hidden;
+    }
+  }
+}

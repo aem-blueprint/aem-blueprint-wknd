@@ -1,0 +1,15 @@
+@layer utilities {
+  .container.form\:group.form\:simple {
+    .cmp-form-text__text {
+      @apply rounded-tl rounded-tr-none rounded-bl rounded-br-none;
+    }
+
+    .text + .button .cmp-form-button {
+      @apply rounded-tl-none rounded-bl-none rounded-tr rounded-br ml-[-1px];
+    }
+
+    .text + .text .cmp-form-text__text {
+      @apply rounded-none;
+    }
+  }
+}

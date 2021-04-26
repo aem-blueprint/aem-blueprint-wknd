@@ -1,0 +1,30 @@
+@layer utilities {
+  [class*=teaser--image-size] {
+    .cmp-image { @apply flex w-full; }
+    .cmp-image__image { @apply object-cover; }
+  }
+  .teaser.teaser--image-size\:25 {
+    .cmp-teaser__content { flex-basis: 75%; }
+    .cmp-teaser__image { @apply flex; flex-basis: 25%; }
+  }
+  .teaser.teaser--image-size\:50 {
+    .cmp-teaser__content { flex-basis: 50%; }
+    .cmp-teaser__image { @apply flex; flex-basis: 50%; }
+  }
+  .teaser.teaser--image-size\:75 {
+    .cmp-teaser__content { flex-basis: 25%; }
+    .cmp-teaser__image { @apply flex; flex-basis: 75%; }
+  }
+  .teaser.teaser--image-size\:icon {
+    .cmp-teaser__content { flex-basis: calc(100% - 3rem); }
+    .cmp-image__image { @apply flex-shrink-0 object-contain w-12; }
+  }
+  .teaser.teaser--image-size\:icon-lg {
+    .cmp-teaser__content { flex-basis: calc(100% - 6rem); }
+    .cmp-image__image { @apply flex-shrink-0 object-contain w-24; }
+  }
+  .teaser.teaser--image-size\:icon-xl {
+    .cmp-teaser__content { flex-basis: calc(100% - 10rem); }
+    .cmp-image__image { @apply w-[10rem] object-contain flex-shrink-0; }
+  }
+}

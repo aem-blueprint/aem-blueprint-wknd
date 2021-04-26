@@ -1,0 +1,45 @@
+@layer components {
+  .languagenavigation.languagenavigation\:dropdown {
+    .cmp-languagenavigation { @apply relative; }
+
+    button {
+      @apply inline-flex row-start-1 bg-transparent border rounded;
+      padding: var(--button-padding);
+      border-color: var(--button-text-color);
+      color: var(--button-text-color);
+    }
+      
+    button:hover {
+      @apply underline;
+      border-color: var(--button-text-color, var(--color));
+      color: var(--button-text-color, var(--color));
+    }
+
+    .cmp-languagenavigation__group {
+      @apply absolute flex-col row-start-2 py-1 transform -translate-x-1/2 border divide-y rounded shadow border-fill-muted border-opacity-50 divide-fill-muted justify-evenly ml-[50%] mt-2 bg-fill;
+      color: var(--button-text-color);
+    }
+
+    .cmp-languagenavigation__group[aria-expanded=true] { @apply flex; }
+    .cmp-languagenavigation__group[aria-expanded=false] { @apply hidden; }
+    
+    .cmp-languagenavigation__item:first-child {
+      @apply border-t border-fill-muted;
+    }
+    
+    .cmp-languagenavigation__item:last-child {
+      @apply border-b border-fill-muted;
+    }
+    .cmp-languagenavigation__item-link { color: var(--button-text-color, var(--color)); }
+    .cmp-languagenavigation__item a { 
+      @apply flex px-4 py-2; 
+      @apply hover:bg-fill-hover;
+      @apply focus:bg-fill-hover;
+    }
+    
+    .cmp-languagenavigation__item--active a {
+      @apply font-bold bg-fill-hover;
+      color: var(--hover-button-text-color, var(--hover-color));
+    }
+  }
+}

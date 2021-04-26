@@ -1,0 +1,24 @@
+@layer components {
+  .accordion.accordion\:border-0 {
+    .cmp-accordion__item {
+      @apply mb-0 border-0;
+
+      &:last-child .cmp-accordion__button {
+        @apply border-b-0;
+      }
+    }
+
+    .cmp-accordion__button {
+      @apply px-0 bg-white border-b border-opacity-50 border-text;
+      @apply hover:text-text-hover hover:border-opacity-75 hover:underline;
+    }
+
+    .cmp-accordion__button--expanded {
+      @apply underline border-opacity-75 text-text-hover;
+    }
+
+    .cmp-accordion__panel {
+      @apply px-0;
+    }
+  }
+}

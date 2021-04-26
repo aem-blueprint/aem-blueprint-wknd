@@ -1,0 +1,12 @@
+@layer components {
+  .container\:navbar .cmp-navigation > .cmp-navigation__group { @apply flex-wrap; }
+
+  .container\:navbar .cmp-navigation__item-link {
+    @apply block px-4 py-3 no-underline uppercase transition-colors duration-150;
+  }
+
+  .container\:navbar .cmp-navigation__item-link:hover,
+  .container\:navbar .cmp-navigation__item--active .cmp-navigation__item-link { 
+    background-color: theme('colors.light.primary.fill');
+  }
+}

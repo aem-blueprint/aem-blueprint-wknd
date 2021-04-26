@@ -1,0 +1,27 @@
+@layer base {
+  .cmp-navigation {}
+  .cmp-navigation__group {
+    @apply z-20 flex;
+    gap: var(--gap);
+    flex-direction: var(--parent-flex-direction, var(--flex-direction));
+
+    .cmp-navigation__group {
+      flex-direction: var(--flex-direction);
+    }
+  }
+
+  .no-flex-gap .var\:flex-row > .cmp-navigation .cmp-navigation__group > li { margin-right: var(--gap); }
+  .no-flex-gap .var\:flex-col > .cmp-navigation .cmp-navigation__group > li { margin-top: var(--gap); }
+  .no-flex-gap .parent-var\:flex-row > .cmp-navigation .cmp-navigation__group > .cmp-navigation__item--level-0 { margin-right: var(--gap); margin-top: 0; }
+  .no-flex-gap .parent-var\:flex-col > .cmp-navigation .cmp-navigation__group > .cmp-navigation__item--level-0 + .cmp-navigation__item--level-0 { margin-top: var(--gap); margin-right: 0; }
+
+  .cmp-navigation__item-link { padding: calc(var(--gap) / 2) 0; }
+  .cmp-navigation__item--active {}
+  /* .cmp-navigation__item--level-0 {} */
+  .cmp-navigation__item-link { 
+    @apply text-text;
+    @apply hover:text-text-hover;
+    @apply focus:text-text-hover;
+  }
+  /* .navigation--l0-color$ .cmp-navigation__item--level-0 > a; */
+}

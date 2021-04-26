@@ -1,0 +1,5 @@
+@layer utilities {
+  .teaser--pretitle\:pill .cmp-teaser__pretitle {
+    @apply px-3 py-1 text-xs font-bold uppercase rounded-full bg-opacity-10;
+  }
+}

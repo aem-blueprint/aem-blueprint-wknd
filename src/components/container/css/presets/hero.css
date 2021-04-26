@@ -1,0 +1,24 @@
+@layer components {
+  html:not(.aem-AuthorLayer-Edit) .container--preset\:hero > .cmp-container { @apply h-[75vh] flex justify-center; }
+
+  #homepage-hero {
+    .cmp-title__text { @apply text-4xl; }
+    .cmp-text { @apply text-xl; }
+  }
+
+  #homepage-hero-buttons .button { 
+    @apply text-sm font-normal; 
+    &:first-child .cmp-button { @apply px-5 uppercase; } 
+    &:last-child {
+      .cmp-button {
+        @apply px-0 font-normal text-black bg-transparent border-none shadow-none;
+        @apply hover:text-section-header;
+      }
+      .cmp-button__icon {
+        @apply w-6 h-6;
+        background-color: theme('colors.light.primary.DEFAULT');
+      }
+      .cmp-button__text { @apply ml-2; }
+    }
+  }
+}

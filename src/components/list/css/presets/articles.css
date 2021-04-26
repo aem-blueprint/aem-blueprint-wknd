@@ -1,0 +1,29 @@
+@layer components {
+  .list.list--preset\:articles {
+    .cmp-list {
+      @apply flex flex-col gap-y-4;
+    }
+
+    .cmp-list__item-link {
+      @apply flex flex-col px-4 py-2 mb-2 no-underline border-l-4 gap-y-2 min-h-[90pt] text-text;
+      border-color: theme('colors.light.gray.200');
+    }
+
+    .cmp-list__item-link:hover { 
+      background-color: theme('colors.light.primary.fill');
+      border-color: theme('colors.light.black.fill');
+    }
+
+    .cmp-list__item-title {
+      @apply text-lg font-semibold uppercase;
+    }
+
+    .cmp-list__item-date {
+      @apply text-sm font-light no-underline text-text-muted;
+    }
+
+    .cmp-list__item-description {
+      @apply prose text-text;
+    }
+  }
+}

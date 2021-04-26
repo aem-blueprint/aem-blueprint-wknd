@@ -1,0 +1,20 @@
+@layer components {
+  .teaser.teaser--preset\:card {
+    .cmp-teaser {
+      @apply overflow-hidden;
+    }
+    .cmp-teaser__content {
+      @apply flex flex-col p-4;
+    }
+
+    .cmp-teaser__title { 
+      @apply my-0;
+    }
+  }
+
+  .teaser.teaser--preset\:card-image-rounded {
+    .cmp-teaser__image {
+      @apply mb-4;
+    }
+  }
+}

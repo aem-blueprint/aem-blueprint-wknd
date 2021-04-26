@@ -1,0 +1,6 @@
+@layer utilities {
+  .carousel.carousel--indicators\:lines {
+    .cmp-carousel__indicators { @apply gap-x-2; }
+    .cmp-carousel__indicator { @apply w-8 h-1 rounded-none; }
+  }
+}

@@ -1,0 +1,6 @@
+@layer components {
+  #root > .header {
+    @apply sticky top-0 shadow-lg;
+  }
+  #logo { @apply max-w-[8rem]; }
+}

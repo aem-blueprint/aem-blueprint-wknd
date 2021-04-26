@@ -1,0 +1,11 @@
+@layer components {
+  .text--preset\:quote .cmp-text {
+    @apply p-10; 
+    background-color: theme('colors.light.gray.200');
+  }
+  .text--preset\:quote .cmp-text blockquote:after {
+    @apply block w-20 h-1 my-4;
+    content: "";
+    background-color: theme('colors.light.primary.fill');
+  }
+}

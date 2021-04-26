@@ -1,0 +1,131 @@
+{
+  "colors": {
+    "light": {
+      ":root": {
+        "text": "40,49,67",
+        "text-hover": "21,26,35",
+        "text-muted": "121,164,224",
+        "text-accent": "225,225,225",
+        "text-accent-hover": "246,248,244",
+        "fill": "255,255,255",
+        "fill-hover": "236,238,244",
+        "fill-muted": "121,164,224",
+        "fill-accent": "66,137,236",
+        "fill-accent-hover": "62,119,200"
+      },
+      "brand": {
+        "primary": {
+          "fill": "",
+          "fill-hover": "",
+          "fill-accent": "",
+          "fill-accent-hover": "",
+          "text": "",
+          "text-hover": "",
+          "text-accent": "",
+          "text-accent-hover": ""
+        },
+        "secondary": {
+          "fill": "",
+          "fill-hover": "",
+          "fill-accent": "",
+          "fill-accent-hover": "",
+          "text": "",
+          "text-hover": "",
+          "text-accent": "",
+          "text-accent-hover": ""
+        },
+        "muted": {
+          "fill": "",
+          "fill-hover": "",
+          "fill-accent": "",
+          "fill-accent-hover": "",
+          "text": "",
+          "text-hover": "",
+          "text-accent": "",
+          "text-accent-hover": ""
+        },
+        "light": {
+          "fill": "",
+          "fill-hover": "",
+          "text": "",
+          "text-hover": ""
+        }, 
+        "dark": {
+          "fill": "",
+          "fill-hover": "",
+          "text": "",
+          "text-hover": ""
+        }
+      },
+      "ui": { 
+        "danger": {
+          "fill": "",
+          "fill-hover": "",
+          "text": "",
+          "text-hover": ""
+        },
+        "dark": {
+          "fill": "",
+          "fill-hover": "",
+          "text": "",
+          "text-hover": ""
+        },
+        "info": {
+          "fill": "",
+          "fill-hover": "",
+          "text": "",
+          "text-hover": ""
+        },
+        "light": {
+          "fill": "",
+          "fill-hover": "",
+          "text": "",
+          "text-hover": ""
+        },
+        "success": {
+          "fill": "",
+          "fill-hover": "",
+          "text": "",
+          "text-hover": ""
+        },
+        "warning": {
+          "fill": "",
+          "fill-hover": "",
+          "text": "",
+          "text-hover": ""
+        }
+      }
+    },
+    "dark": {
+      ":root": {
+        "text": "225,225,225",
+        "text-hover": "246,248,244",
+        "text-muted": "121, 164, 224",
+        "text-accent": "225,225,225",
+        "text-accent-hover": "246,248,244",
+        "fill": "10,19,37",
+        "fill-hover": "8,15,31",
+        "fill-muted": "121, 164, 224",
+        "fill-accent": "66,137,236",
+        "fill-accent-hover": "62,119,200"
+      }
+    },
+    "primary": {
+      "text": "225,225,225",
+      "text-hover": "246,248,244",
+      "fill": "66, 137, 236",
+      "fill-hover": "62, 119, 200"
+    },
+    "secondary": {
+      "text": "194, 202, 219",
+      "text-hover": "210, 216, 228",
+      "fill": "40, 49, 67",
+      "fill-hover": "29, 37, 50"
+    },
+    "transparent": {
+      "DEFAULT": "transparent",
+      "fill": "transparent",
+      "fill-hover": "transparent"
+    }
+  }
+}

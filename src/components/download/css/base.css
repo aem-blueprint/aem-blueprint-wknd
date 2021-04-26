@@ -1,0 +1,17 @@
+@layer base {
+  .cmp-download { @apply flex-col gap-y-3; }
+  .cmp-download__title { @apply mt-0 font-sans text-base font-semibold; }
+  .cmp-download__title-link { @apply text-text}
+  .cmp-download__description { @apply text-text; }
+  .cmp-download__properties {
+    @apply inline-flex flex-wrap my-2 gap-x-2;
+  }
+  .cmp-download__property { @apply text-xs uppercase; }
+  .cmp-download__property-label { @apply hidden; }
+  .cmp-download__property-content {}
+  .cmp-download__property--filename {}
+  .cmp-download__property--size {}
+  .cmp-download__property--format {}
+  .cmp-download__action {}
+  .cmp-download__action-text {}
+}

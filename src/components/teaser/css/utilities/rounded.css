@@ -1,0 +1,5 @@
+@layer utilities {
+  [class*=teaser--rounded]:not([class*=teaser--rounded-image]):not([class*=teaser--rounded-content]) { --teaser-border-radius: var(--border-radius); } 
+  [class*=teaser--rounded-image]:not([class*=teaser--rounded\:]):not([class*=teaser--rounded-content]) { --teaser-image-border-radius: var(--border-radius); } 
+  [class*=teaser--rounded-content]:not([class*=teaser--rounded\:]):not([class*=teaser--rounded-image]) { --teaser-content-border-radius: var(--border-radius); } 
+}

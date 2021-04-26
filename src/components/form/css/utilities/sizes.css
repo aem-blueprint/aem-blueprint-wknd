@@ -1,0 +1,5 @@
+@layer utilities {
+  .container.form\:small { --padding-y: .25rem; --padding-x: .50rem; }
+  .container.form\:default { --padding-y: .50rem; --padding-x: 1rem; }
+  .container.form\:large { --padding-y: .75rem; --padding-x: 1.25rem; }
+}

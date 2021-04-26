@@ -1,0 +1,13 @@
+@layer utilities {
+  .container.form--label\:beside {
+    .cmp-form-text {
+      @apply flex flex-row items-center gap-x-4;
+    }
+  }
+
+  .container.form--label\:sronly {
+    label {
+      @apply sr-only;
+    }
+  }
+}

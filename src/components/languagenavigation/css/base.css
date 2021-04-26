@@ -1,0 +1,19 @@
+@layer base {
+  .cmp-languagenavigation {}
+  /* .cmp-languagenavigation--countrycode-US */
+  /* .cmp-languagenavigation--langcode-en-US */
+  .cmp-languagenavigation__group {
+    gap: var(--gap, 0);
+    column-gap: var(--column-gap, 0);
+    row-gap: var(--row-gap, 0);
+  }
+  .cmp-languagenavigation__item {}
+  .cmp-languagenavigation__item--active {}
+  /* .cmp-languagenavigation__item--level-0 {} */
+  .cmp-languagenavigation__item-link { 
+    @apply text-text;
+    @apply hover:text-text-hover hover:underline;
+    @apply focus:text-text-hover focus:underline;
+  }
+  .cmp-languagenavigation__item-title {}
+}

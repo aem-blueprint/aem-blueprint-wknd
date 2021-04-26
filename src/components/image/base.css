@@ -1,0 +1,6 @@
+@layer base {
+  .cmp-image {}
+  .cmp-image__link {}
+  .cmp-image__image {}
+  .cmp-image__title { @apply my-2 italic font-semibold; }
+}

@@ -1,0 +1,4 @@
+@layer utilities {
+  .equal-height > .cmp-container > .teaser > .cmp-teaser,
+  .equal-height > .cmp-container > .container > .cmp-container { @apply h-full; }
+}

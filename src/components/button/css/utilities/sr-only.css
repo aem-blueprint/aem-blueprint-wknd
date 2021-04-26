@@ -1,0 +1,9 @@
+@layer utilities {
+  .button.skipToMain {
+    @apply sr-only;
+    &:focus-within {
+      @apply w-auto h-auto m-2;
+      clip: auto;
+    }
+  }
+}

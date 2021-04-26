@@ -1,0 +1,28 @@
+@layer utilities {
+  /* See main components/button/css/button.css for base styles */ 
+  /* See main components/button/css/outline.css for base styles */ 
+
+  .teaser.teaser--action\:button-outline .cmp-teaser__action-link,
+  .teaser.teaser--action\:button-outline-group .cmp-teaser__action-link {
+    @apply bg-transparent text-fill-accent border-fill-accent;
+    @apply hover:bg-fill-hover hover:text-fill-accent-hover hover:border-fill-accent-hover;
+    @apply focus:bg-fill-hover focus:text-fill-accent-hover focus:border-fill-accent-hover;
+  }
+
+  .teaser.teaser--action\:button .cmp-teaser__action-link,
+  .teaser.teaser--action\:button-group .cmp-teaser__action-link {
+    @apply bg-fill-accent text-text-accent border-fill-accent;
+    @apply hover:bg-fill-accent-hover hover:text-text-accent-hover hover:border-fill-accent-hover;
+    @apply focus:bg-fill-accent-hover focus:text-text-accent-hover focus:border-fill-accent-hover;
+  }
+
+  .teaser.teaser--action\:button-group,
+  .teaser.teaser--action\:button-outline-group {
+    .cmp-teaser__action-container { @apply flex gap-0; }
+    .cmp-teaser__action-link { @apply rounded-none ml-[-1px]; }
+
+    .cmp-teaser__action-link:first-child { @apply ml-0 rounded-l; }
+    .cmp-teaser__action-link:last-child { @apply rounded-r; }
+    .cmp-teaser__action-link:first-child:last-child { @apply rounded; }
+  }
+}

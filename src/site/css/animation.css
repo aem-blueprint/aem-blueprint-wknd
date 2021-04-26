@@ -1,0 +1,13 @@
+@layer base {
+  .animate-in { @apply transition-all ease-in-out transform; }
+  .animate-in:not([class*=duration-]) { @apply duration-400; }
+  html:not(.aem-AuthorLayer-Edit) .animate-in:not(.animated) { @apply opacity-0; }
+
+  html:not(.aem-AuthorLayer-Edit) .fade-top:not(.animated) { @apply -translate-y-20; }
+  html:not(.aem-AuthorLayer-Edit) .fade-right:not(.animated) { @apply translate-x-20; }
+  html:not(.aem-AuthorLayer-Edit) .fade-bottom:not(.animated) { @apply translate-y-20; }
+  html:not(.aem-AuthorLayer-Edit) .fade-left:not(.animated) { @apply -translate-x-20; }
+
+  html:not(.aem-AuthorLayer-Edit) .zoom-in:not(.animated) { @apply scale-0; }
+  html:not(.aem-AuthorLayer-Edit) .zoom-out:not(.animated) { @apply scale-125; }
+}

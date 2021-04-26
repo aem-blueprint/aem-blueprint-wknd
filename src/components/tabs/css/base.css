@@ -1,0 +1,26 @@
+@layer base {
+  .cmp-tabs {}
+  .cmp-tabs__tablist {
+    @apply mb-4 border-b border-text flex-nowrap;
+  }
+  @screen sm {
+    .cmp-tabs__tablist { @apply pt-1 overflow-x-auto; }
+  }
+
+  .cmp-tabs__tab {
+    @apply border border-transparent rounded-none rounded-t outline-none whitespace-nowrap;
+    color: var(--color);
+    @apply hover:underline;
+    @apply active:focus:ring active:focus:ring-DEFAULT active:focus:ring-opacity-50 active:focus:ring-offset-2;
+  }
+  .cmp-tabs__tab--active {
+    @apply mb-[-1px] border-text;
+    border-bottom-color: var(--color-fill);
+  }
+
+  .cmp-tabs__tabpanel {
+    @apply outline-none;
+    @apply active:focus:ring active:focus:ring-DEFAULT active:focus:ring-opacity-50 active:focus:ring-offset-2;
+  }
+  .cmp-tabs__tabpanel--active {}
+}

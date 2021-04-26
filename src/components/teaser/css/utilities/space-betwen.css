@@ -1,0 +1,12 @@
+@layer utilities {
+  [class*=var\:m-]:not(.var\:flex-row):not(.var\:flex-col-reverse):not(.var\:flex-row-reverse) .cmp-teaser__image { margin-bottom: var(--margin, 0); }
+  [class*=var\:m-]:not(.var\:flex-row):not(.var\:flex-col-reverse):not(.var\:flex-row-reverse) .cmp-teaser__content { margin-top: var(--margin, 0); }
+  [class*=var\:m-].var\:flex-col .cmp-teaser__image { margin-bottom: var(--margin, 0); }
+  [class*=var\:m-].var\:flex-col .cmp-teaser__content { margin-top: var(--margin, 0); }
+  [class*=var\:m-].var\:flex-col-reverse .cmp-teaser__image { margin-top: var(--margin, 0); }
+  [class*=var\:m-].var\:flex-col-reverse .cmp-teaser__content { margin-bottom: var(--margin, 0); }
+  [class*=var\:m-].var\:flex-row .cmp-teaser__image { margin-right: var(--margin, 0); }
+  [class*=var\:m-].var\:flex-row .cmp-teaser__content { margin-left: var(--margin, 0); }
+  [class*=var\:m-].var\:flex-row-reverse .cmp-teaser__image { margin-left: var(--margin, 0); }
+  [class*=var\:m-].var\:flex-row-reverse .cmp-teaser__content { margin-right: var(--margin, 0); }
+}

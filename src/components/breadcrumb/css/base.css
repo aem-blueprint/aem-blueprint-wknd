@@ -1,0 +1,32 @@
+@layer base {
+  .cmp-breadcrumb {
+    @apply block;
+  }
+
+  .cmp-breadcrumb__list {
+    @apply flex flex-wrap p-0 my-4 list-none;
+  }
+
+  .cmp-breadcrumb__item {
+    @apply pl-2;
+
+    &:first-child { @apply pl-0; }
+
+    &:not(:first-child)::before {
+      @apply relative inline-block float-left w-4 h-4 mr-2 top-1;
+      content: '';
+      background-color: theme('colors.light.primary.fill');
+      mask-size: 100%;
+      mask-image: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"> <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/> </svg>');
+    }
+  }
+
+  .cmp-breadcrumb__item--active { @apply font-normal; }
+
+  .cmp-breadcrumb__item-link {
+    @apply font-semibold uppercase text-text-muted;
+    @apply hover:focus:text-fill-accent-hover;
+  }
+
+  .cmp-breadcrumb__item-link::after {}
+}

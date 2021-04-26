@@ -1,0 +1,7 @@
+@layer components {
+  .title--preset\:underline .cmp-title .cmp-title__text:after {
+    @apply block w-20 h-1 my-4;
+    content: "";
+    background-color: theme('colors.light.primary.fill');
+  }
+}

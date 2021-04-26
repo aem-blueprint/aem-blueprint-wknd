@@ -1,0 +1,8 @@
+@layer components {
+  .container.form\:underline {
+    .cmp-form-text__textarea, .cmp-form-text__text {
+      @apply text-text block w-full px-0.5 border-0 border-b-2 transition-all;
+      @apply focus:ring-0 focus:border-black;
+    }
+  }
+}

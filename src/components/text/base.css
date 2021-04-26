@@ -1,0 +1,16 @@
+@layer base {
+  .cmp-text { @apply prose text-text; }
+}
+@layer components {
+  .cmp-text__paragraph {}
+  .cmp-text blockquote,
+  .cmp-text h1, .cmp-text h2, .cmp-text h3, .cmp-text h4, .cmp-text h5, .cmp-text h6 { @apply text-text-hover; }
+  .cmp-text a {
+    @apply text-fill-accent;
+    @apply hover:text-fill-accent-hover;
+    @apply focus:text-fill-accent-hover;
+  }
+  .var\:text-left .cmp-text { @apply text-left; }
+  .var\:text-center .cmp-text { @apply text-center; }
+  .var\:text-right .cmp-text { @apply text-right; }
+}

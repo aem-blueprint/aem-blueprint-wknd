@@ -1,0 +1,13 @@
+@layer base {
+  :root {
+    /* --background-color: rgb(255,255,255);
+    --hover-background-color: rgb(236,238,244);
+    --color: rgb(40,49,67);
+    --color-inverted: rgb(30,30,30);
+    --hover-color: rgb(21,26,35);
+    --hover-color-inverted: rgb(10,10,10); */
+    --text-size: theme('fontSize.base');
+    --font-size: theme('fontSize.base');
+    --flex-direction: column;
+  }
+}

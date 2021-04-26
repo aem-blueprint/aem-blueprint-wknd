@@ -1,0 +1,7 @@
+@layer utilities {
+  .teaser.teaser\:border .cmp-teaser,
+  .teaser.teaser\:image-border .cmp-teaser__image,
+  .teaser.teaser\:content-border .cmp-teaser__content {
+    @apply border border-opacity-50 border-text;
+  }
+}

@@ -1,0 +1,6 @@
+@layer utilities {
+  .container.form\:grid .cmp-form.aem-Grid:before,
+  .container.form\:grid .cmp-form.aem-Grid:after {
+    content: none;
+  }
+}

@@ -1,0 +1,7 @@
+@layer base {
+  .cmp-title {
+    text-align: var(--text-align);
+  }
+  .cmp-title__text {}
+  .cmp-title__link {}
+}

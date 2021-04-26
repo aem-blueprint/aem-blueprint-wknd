@@ -1,0 +1,11 @@
+@layer components {
+  .teaser--preset\:services-box .cmp-teaser__image {
+    @apply p-2 rounded;
+    background-color: theme('colors.light.gray.100');
+    border-color: theme('colors.light.gray.300');
+  }
+  .teaser--preset\:services-box .cmp-teaser {
+    @apply py-10 border;
+    border-color: theme('colors.light.gray.200');
+  }
+}

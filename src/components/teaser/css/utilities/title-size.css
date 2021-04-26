@@ -1,0 +1,9 @@
+@layer utilities {
+  [class*=teaser--title] .cmp-teaser__title { @apply font-semibold; }
+  .teaser--title\:h1 .cmp-teaser__title { @apply text-3xl; }
+  .teaser--title\:h2 .cmp-teaser__title { @apply text-2xl; }
+  .teaser--title\:h3 .cmp-teaser__title { @apply text-xl; }
+  .teaser--title\:h4 .cmp-teaser__title { @apply text-lg; }
+  .teaser--title\:h5 .cmp-teaser__title { @apply text-base; }
+  .teaser--title\:h6 .cmp-teaser__title { @apply text-sm; }
+}

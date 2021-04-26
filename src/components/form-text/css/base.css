@@ -1,0 +1,19 @@
+@layer base {
+  [multiple],[type=date],[type=datetime-local],[type=email],[type=month],[type=number],[type=password],[type=search],[type=tel],[type=text],[type=time],[type=url],[type=week],select,textarea {
+    @apply text-base leading-normal border rounded-none outline-none appearance-none bg-fill text-text-muted border-text-muted;
+    @apply hover:border-text-hover hover:text-text-hover hover:bg-fill-hover;
+    @apply focus:border-text-hover focus:text-text-hover focus:bg-fill-hover;
+    padding: var(--padding-y, var(--padding, .75rem)) var(--padding-x, var(--padding, .75rem));
+  }
+
+  .container:not(.form\:simple):not(.form\:underline):not(.form\:solid) {
+    .cmp-form-text label { @apply text-text-muted; }
+    .cmp-form-text__help-block {}
+    .cmp-form-text__textarea, .cmp-form-text__text { @apply block w-full text-text; }
+  }
+  
+  [class*=form\:outline] .cmp-form-text__textarea, [class*=form\:outline] .cmp-form-text__text {
+    @apply bg-text text-fill border-fill;
+    @apply hover:focus:bg-text-hover hover:focus:text-fill-hover hover:focus:border-fill-hover;
+  }
+}

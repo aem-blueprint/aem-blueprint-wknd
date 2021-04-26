@@ -1,0 +1,6 @@
+@layer utilities {
+  .navigation.navigation\:flex-row { --navigation-flex-direction: row; }
+  .navigation.navigation--l0\:flex-row { --navigation-l0-flex-direction: row; }
+  .navigation.navigation\:flex-col { --navigation-flex-direction: column; }
+  .navigation.navigation--l0\:flex-col { --navigation-l0-flex-direction: column; }
+}

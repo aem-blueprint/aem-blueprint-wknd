@@ -1,0 +1,8 @@
+@layer utilities {
+  [class*=button\:outline] .cmp-form-button,
+  [class*=button\:outline] .cmp-button {
+    @apply bg-transparent text-fill border-fill;
+    @apply hover:bg-fill-hover hover:text-text-hover hover:border-fill-hover;
+    @apply focus:bg-text-hover focus:text-text-hover focus:border-fill-hover;
+  }
+}

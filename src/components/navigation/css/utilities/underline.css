@@ -1,0 +1,8 @@
+@layer utilities {
+  .navigation\:underline a,
+  .navigation\:hover\:underline a:hover,
+  .navigation\:focus\:underline a:focus,
+  .navigation\:active\:underline .cmp-navigation__item--active > a {
+    @apply underline;
+  }
+}

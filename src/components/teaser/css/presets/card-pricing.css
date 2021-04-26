@@ -1,0 +1,29 @@
+@layer components {
+  [class*=teaser--preset\:card-pricing] {
+    .cmp-teaser { 
+      @apply text-center border-2 rounded;
+      border-color: theme('colors.light.gray.100');
+    }
+    .cmp-teaser__title-link { color: theme('colors.light.primary.DEFAULT'); }
+    .cmp-teaser__content { @apply w-full; }
+    .cmp-teaser__pretitle {
+      @apply py-4 text-sm font-semibold;
+      background-color: theme('colors.light.gray.100');
+    }
+    .cmp-teaser__description { 
+      @apply text-sm; 
+      color: theme('colors.light.gray.500');
+    }
+    .cmp-teaser__description li { @apply my-2; }
+    .cmp-teaser__action-container { 
+      @apply justify-center w-full py-3; 
+      background-color: theme('colors.light.gray.100');
+    } 
+    .cmp-teaser__action-link { @apply px-4 py-1; }
+  }
+
+  .teaser--preset\:card-pricing-featured .cmp-teaser__pretitle { 
+    background-color: theme('colors.light.primary.DEFAULT');
+    color: white;
+  }
+}

@@ -1,0 +1,39 @@
+html {
+  @apply font-sans text-base;
+}
+
+.h1,
+.title--h1,
+h1 {
+  @apply my-2 text-4xl font-display;
+}
+
+.h2,
+.title--h2,
+h2 {
+  @apply my-2 text-3xl font-display;
+}
+
+.h3,
+.title--h3,
+h3 {
+  @apply my-2 text-2xl font-display;
+}
+
+.h4,
+.title--h4,
+h4 {
+  @apply my-2 text-xl font-display;
+}
+
+.h5,
+.title--h5,
+h5 {
+  @apply my-2 font-sans text-lg font-semibold;
+}
+
+.h6,
+.title--h6,
+h6 {
+  @apply my-2 font-sans text-base font-semibold;
+}
